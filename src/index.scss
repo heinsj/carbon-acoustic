@@ -5,6 +5,15 @@ The React <Content /> component uses the `main` element which IE11 doesn't recog
 
 @link https://github.com/carbon-design-system/carbon/issues/2789
 */
+
+@import 'carbon-components/scss/globals/scss/theme.scss';
+// Use the gray 100 theme
+@include carbon--theme($carbon--theme--g100);
+
+$feature-flags: (
+  ui-shell: true,
+);
+@import 'carbon-components/scss/globals/scss/styles.scss';
 main {
   display: block;
 }
